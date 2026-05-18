@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 — Domain-Adaptive DNN Beamformer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Your Name</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project1.html" class="active">Project 1</a></li>
+      <li><a href="project2.html">Project 2</a></li>
+      <li><a href="project3.html">Project 3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="project-header">
+      <a href="index.html" class="back-link">← Back to all projects</a>
+      <h1>Domain-Adaptive Deep Neural Network Beamformer for Echocardiography</h1>
+      <div class="project-meta">
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Beamforming</span>
+        <span class="tag">Echocardiography</span>
+        <span class="tag">Domain Adaptation</span>
+        <span class="tag">Medical Imaging</span>
+      </div>
+    </div>
+
+    <div class="project-body">
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>
+          Conventional delay-and-sum (DAS) beamforming in echocardiography produces images with
+          limited contrast and resolution. Deep neural network (DNN) beamformers offer a powerful
+          alternative, but their performance often degrades when deployed on data from acquisition
+          settings or equipment not seen during training — a problem known as domain shift. This
+          project addresses that gap by developing a domain-adaptive DNN beamformer that maintains
+          high image quality across varied clinical echocardiography domains.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          Echocardiography is the primary imaging modality for assessing cardiac structure and
+          function, yet image quality is highly sensitive to probe frequency, patient anatomy,
+          and acquisition protocol. A beamformer trained on one clinical setting may fail silently
+          on another, limiting real-world utility. Domain adaptation provides a principled path to
+          robust, generalizable models.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Key Contributions</h2>
+        <ul>
+          <li>Designed a DNN beamforming architecture operating directly on raw channel data.</li>
+          <li>Incorporated domain adaptation techniques to reduce the covariate shift between training and target acquisition domains.</li>
+          <li>Evaluated image quality metrics (contrast ratio, generalized contrast-to-noise ratio) across multiple echocardiographic datasets.</li>
+          <li>Demonstrated improved robustness compared to standard DAS and unadapted DNN baselines.</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Figure / Results</h2>
+        <div class="placeholder-block">[ Insert figure, results image, or diagram here ]</div>
+      </div>
+
+      <div class="project-section">
+        <h2>Methods &amp; Tools</h2>
+        <ul>
+          <li>PyTorch — model training and evaluation</li>
+          <li>Field II / k-Wave — ultrasound simulation for synthetic training data</li>
+          <li>Domain adaptation: [describe your specific method, e.g. adversarial training, MMD, CORAL, etc.]</li>
+          <li>[Add additional tools, datasets, or frameworks used]</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Additional Notes</h2>
+        <p>
+          [Add any publication links, collaborators, conference/journal names, code repositories,
+          or further context about this project here.]
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name. Built with HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>

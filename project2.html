@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 2 — Noise Characterization via SBI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Your Name</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project1.html">Project 1</a></li>
+      <li><a href="project2.html" class="active">Project 2</a></li>
+      <li><a href="project3.html">Project 3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="project-header">
+      <a href="index.html" class="back-link">← Back to all projects</a>
+      <h1>Noise Characterization of Ultrasound Channel Data via Simulation-Based Inference</h1>
+      <div class="project-meta">
+        <span class="tag">Simulation-Based Inference</span>
+        <span class="tag">Noise Modeling</span>
+        <span class="tag">Ultrasound</span>
+        <span class="tag">Bayesian Inference</span>
+        <span class="tag">Channel Data</span>
+      </div>
+    </div>
+
+    <div class="project-body">
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>
+          Raw ultrasound channel data — recorded before any beamforming — contains complex,
+          spatially and temporally correlated noise whose precise statistical structure is rarely
+          known analytically. Accurate noise characterization is essential for designing optimal
+          beamformers and evaluating image quality. This project applies simulation-based inference
+          (SBI), a likelihood-free Bayesian framework, to infer the parameters of noise models
+          directly from observed channel data.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          Traditional noise characterization assumes simple, tractable noise models (e.g. additive
+          white Gaussian noise). In practice, ultrasound channel data is corrupted by clutter,
+          electronic noise, reverberation, and off-axis scattering — combinations that resist closed-form
+          likelihood evaluation. SBI bypasses this requirement, enabling inference even when the
+          likelihood is intractable, by learning a surrogate from simulated data.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Key Contributions</h2>
+        <ul>
+          <li>Formulated noise characterization in ultrasound channel data as a Bayesian parameter estimation problem.</li>
+          <li>Built a forward simulator capturing relevant noise sources in the ultrasound acquisition chain.</li>
+          <li>Applied sequential neural posterior estimation (SNPE) to learn the posterior over noise parameters.</li>
+          <li>Validated inferred noise parameters against held-out experimental datasets.</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Figure / Results</h2>
+        <div class="placeholder-block">[ Insert figure, posterior plots, or validation results here ]</div>
+      </div>
+
+      <div class="project-section">
+        <h2>Methods &amp; Tools</h2>
+        <ul>
+          <li>sbi (Python library) — sequential neural posterior/likelihood/ratio estimation</li>
+          <li>Field II / custom simulator — generating synthetic channel data with parametric noise</li>
+          <li>PyTorch — neural density estimator training</li>
+          <li>[Add additional tools, datasets, or frameworks used]</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Additional Notes</h2>
+        <p>
+          [Add any publication links, collaborators, conference/journal names, code repositories,
+          or further context about this project here.]
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name. Built with HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3 — HDR Loss Functions for Ultrasound</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Your Name</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project1.html">Project 1</a></li>
+      <li><a href="project2.html">Project 2</a></li>
+      <li><a href="project3.html" class="active">Project 3</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="project-header">
+      <a href="index.html" class="back-link">← Back to all projects</a>
+      <h1>Comparison of High Dynamic Range Loss Functions for Ultrasound Beamforming</h1>
+      <div class="project-meta">
+        <span class="tag">Loss Functions</span>
+        <span class="tag">High Dynamic Range</span>
+        <span class="tag">Beamforming</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Image Quality</span>
+      </div>
+    </div>
+
+    <div class="project-body">
+
+      <div class="project-section">
+        <h2>Overview</h2>
+        <p>
+          Training deep learning beamformers for ultrasound is complicated by the extreme dynamic
+          range of beamformed images, which can span 60 dB or more. A loss function computed on
+          linear-scale data will be dominated by high-amplitude regions, neglecting weaker but
+          diagnostically relevant structures. This project systematically compares loss functions
+          specifically designed — or adapted — to handle high dynamic range (HDR) signals in the
+          context of ultrasound beamforming.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Motivation</h2>
+        <p>
+          The choice of loss function directly shapes what a neural network learns to optimize.
+          Standard losses like mean squared error are poorly suited to HDR data because small
+          absolute errors in high-amplitude regions overwhelm large relative errors in low-amplitude
+          ones. Identifying loss functions that lead to perceptually and clinically meaningful
+          image quality improvements is a critical step toward reliable deep learning beamformers.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <h2>Key Contributions</h2>
+        <ul>
+          <li>Surveyed and categorized candidate HDR-aware loss functions including log-domain MSE, perceptual losses, and structural similarity-based variants.</li>
+          <li>Designed a controlled experimental framework to isolate the effect of loss function choice on beamforming performance.</li>
+          <li>Evaluated each loss using quantitative metrics: contrast ratio, gCNR, FWHM lateral resolution, and speckle SNR.</li>
+          <li>Provided recommendations for loss function selection based on task-specific imaging priorities.</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Figure / Results</h2>
+        <div class="placeholder-block">[ Insert comparison figures, metric tables, or qualitative image results here ]</div>
+      </div>
+
+      <div class="project-section">
+        <h2>Methods &amp; Tools</h2>
+        <ul>
+          <li>PyTorch — model training with custom loss implementations</li>
+          <li>Field II / k-Wave — simulated phantoms for ground-truth comparison</li>
+          <li>Loss functions evaluated: [list specific losses, e.g. log-MSE, SSIM, MS-SSIM, perceptual, etc.]</li>
+          <li>[Add additional tools, datasets, or frameworks used]</li>
+        </ul>
+      </div>
+
+      <div class="project-section">
+        <h2>Additional Notes</h2>
+        <p>
+          [Add any publication links, collaborators, conference/journal names, code repositories,
+          or further context about this project here.]
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name. Built with HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>
